@@ -1,0 +1,72 @@
+/* 
+LIGHT RESET 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%
+}
+
+/* 
+TYPOGRAPHY 
+*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* 
+NAVBAR
+*/
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    border: 2px solid red;
+}
+
+.nav-logo {
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 30vw;
+    margin-right: 10%;
+    justify-content: space-evenly;
+    list-style: none;
+    border: 2px solid green;
+}
+
+/* 
+HEADER
+*/
+
+.hero {
+    margin-top: 500px;
+    border: 2px solid blue;
+}
+
+
+
+
+
+
+
+
+/* 1120px menu burger */

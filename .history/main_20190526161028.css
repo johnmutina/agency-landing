@@ -1,0 +1,308 @@
+/* 
+LIGHT RESET 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+/* 
+TYPOGRAPHY 
+*/
+
+body {
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+::selection {
+    background: #fed136;
+    text-shadow: none;
+}
+
+h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Droid Serif';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    color: #6C757D;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-size: 24px;
+}
+
+p {
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    line-height: 1.75;
+    color: #6C757D;
+}
+
+/* 
+GENERAL CSS CLASSES
+*/
+
+.main-section {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    padding: 100px 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.sect-intro h2 {
+    margin-bottom: 20px;
+}
+
+.sect-intro h3 {
+    margin-bottom: 40px;
+}
+
+/* 
+NAVBAR
+*/
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+/* CLASS FOR NAVBAR AT START POSITION */
+.nav-start {
+    height: 80px;
+}
+
+/* CLASS FOR NAVBAR WHEN SCROLLING */
+.nav-alt {
+    height: 45px;
+    background-color: #212529;
+}
+
+
+/* LOGO STANDARD PROPERTIES */
+
+.nav-logo {
+    font-family: 'Kaushan Script';
+    margin-left: 10%;
+}
+
+.nav-logo a {
+    text-decoration: none; 
+    color: #fed136;
+}
+
+.nav-logo a:hover {
+    color: #fec503;
+}
+
+/* LOGO WHEN NAVBAR AT START POSITION */
+.nav-start .nav-logo a {
+    font-size: 28px;
+}
+
+/* LOGO WHEN NAVBAR IS SCROLLING */
+.nav-alt .nav-logo a {
+    font-size: 20px;
+}
+
+/* RESUME NORMAL FLOW */
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 40vw;
+    margin-right: 10%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-link a {
+    color: white;
+    font-size: 14.4px;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+.nav-link a:hover {
+    color: #fed136;
+}
+
+/* 
+HEADER
+*/
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 800px;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    /* TODO add /agency-landing/ in front of pictures in local folder */
+    url("/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 170px 0;
+    width: 900px;
+}
+
+.hero-content h3 {
+    color: white;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-family: Montserrat;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.hero-content button {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    /* TODO: Style button (here or general?) */
+}
+
+/* 
+SERVICES
+*/
+
+.services {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    padding: 100px 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-row {
+    display: flex;
+}
+
+.services-row i {
+    font-size: 5rem;
+    color: #fed136;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    padding: 2%;
+}
+
+.service-box h4 {
+    margin-bottom: 18px;
+}
+
+/* 
+PORTFOLIO
+*/
+
+.portfolio {
+    background-color: #F8F9FA;
+}
+
+.portfolio-wall {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.portfolio-box {
+    width: 31%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.portfolio-box a img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    z-index: 2;
+    background-color: blue;
+}
+/* TODO: Create yellow overlay with link */
+
+.portfolio-box h3 {
+    padding: 10px 0 20px 0;
+}
+
+/* 
+ABOUT
+*/
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10%;
+    border: 2px solid red;
+}
+
+.about-row-reversed {
+    border: 2px solid green;
+}
+
+.about-content {
+    position: absolute;
+    text-align: right;
+    width: 20%;
+    left: 25%;
+}
+
+.about-image img {
+    
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 950px menu burger */
