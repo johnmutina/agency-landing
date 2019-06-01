@@ -552,6 +552,10 @@ footer {
         display: flex;
         justify-content: center;
         width: 40%;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
 
     .burger-button {
@@ -564,6 +568,7 @@ footer {
         font-size: 13px;
         padding: 0;
         border-radius: 5px;
+        
     }
 
     .burger-button i {

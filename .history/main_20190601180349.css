@@ -61,7 +61,7 @@ GENERAL CSS CLASSES
 */
 
 .hidden {
-    display: none;
+    /* display: none; */
 }
 
 .main-section {
@@ -169,11 +169,6 @@ nav {
     margin-right: 10%;
     justify-content: space-evenly;
     list-style: none;
-}
-
-/* HIDE BURGER MENU */
-.burger-div {
-    display: none;
 }
 
 .nav-link a {
@@ -573,6 +568,7 @@ footer {
     }
 
     .burger-menu {
+        display: none;
         position: absolute;
         width: 100%;
         top: 45px;

@@ -61,7 +61,7 @@ GENERAL CSS CLASSES
 */
 
 .hidden {
-    display: none;
+    /* display: none; */
 }
 
 .main-section {

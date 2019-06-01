@@ -171,11 +171,6 @@ nav {
     list-style: none;
 }
 
-/* HIDE BURGER MENU */
-.burger-div {
-    display: none;
-}
-
 .nav-link a {
     color: white;
     font-size: 14.4px;
@@ -573,6 +568,7 @@ footer {
     }
 
     .burger-menu {
+        display: none;
         position: absolute;
         width: 100%;
         top: 45px;

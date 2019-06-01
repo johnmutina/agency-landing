@@ -573,6 +573,7 @@ footer {
     }
 
     .burger-menu {
+        /* display: none; */
         position: absolute;
         width: 100%;
         top: 45px;

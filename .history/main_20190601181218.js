@@ -1,4 +1,4 @@
-// Change navbar when scrolling
+// CHANGE NAVBAR WHEN SCROLLING
 $(window).scroll(function(e){
     var scrollPos = $(window).scrollTop();
     if (scrollPos > 100) {
@@ -8,21 +8,17 @@ $(window).scroll(function(e){
     }
 });
 
-// Displays and hides mobile menu
+// DISPLAYS AND HIDES MOBILE MENU
 $(".burger-button").click(function() {
     $(".burger-menu").slideToggle("hidden");
 });
 
 $(".burger-menu li").click(function() {
     $(".burger-menu").slideToggle("hidden");
-});
+})
 
-// If logo gets clicked, menu closes
-$(".nav-logo").click(function () {
-    if ($(".burger-menu").css("display") != "none") {
-        $(".burger-menu").slideToggle("hidden");
-    }
-});
+
+
 
 // TODO: display form errors in html
 // TODO: create yellow overlay for portfolio items with link on a new page

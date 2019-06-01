@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <nav class="main-menu">
+        <nav class="nav-alt">
+            <!-- TODO: Toggle nav-start class with nav-alt when scrolling -->
             <div class="nav-logo">
                 <a href="#">Start Bootstrap</a>
             </div>
@@ -27,7 +26,7 @@
             <!-- MOBILE MENU (hidden by defaul) -->
             <div class="burger-div">
                 <button class="burger-button button-big">Menu<i class="fas fa-bars"></i></button>
-                <ul class="burger-menu hidden">
+                <ul class="burger-menu">
                     <li class="nav-link"><a href="#services">Services</a></li>
                     <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
                     <li class="nav-link"><a href="#about">About</a></li>
@@ -272,5 +271,7 @@
         </div>
     </footer>
     <script src="/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 </html>

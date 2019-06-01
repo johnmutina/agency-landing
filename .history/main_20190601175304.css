@@ -60,10 +60,6 @@ p {
 GENERAL CSS CLASSES
 */
 
-.hidden {
-    display: none;
-}
-
 .main-section {
     display: flex;
     flex-flow: column nowrap;
@@ -113,6 +109,7 @@ nav {
     top: 0;
 }
 
+/* CLASS FOR NAVBAR AT START POSITION */
 .main-menu {
     height: 80px;
     /* CSS TRANSITION */
@@ -122,7 +119,7 @@ nav {
     transition: all 0.2s ease;
 }
 
-/* CLASS FOR STICKY NAVBAR WHEN SCROLLING */
+/* CLASS FOR NAVBAR WHEN SCROLLING */
 .nav-alt {
     height: 45px;
     background-color: #212529;
@@ -133,6 +130,7 @@ nav {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
 
 /* LOGO STANDARD PROPERTIES */
 
@@ -151,7 +149,7 @@ nav {
 }
 
 /* LOGO WHEN NAVBAR AT START POSITION */
-.main-menu .nav-logo a {
+.nav-start .nav-logo a {
     font-size: 28px;
 }
 
@@ -532,16 +530,6 @@ footer {
         padding: 14px;
     }
     
-    .main-menu {
-        height: 45px;
-        background-color: #212529;
-        z-index: 1;
-    }
-
-    .main-menu .nav-logo a {
-        font-size: 20px;
-    }
-
     /* HIDE NORMAL NAVBAR */
     .navbar {
         display: none;
@@ -573,6 +561,7 @@ footer {
     }
 
     .burger-menu {
+        display: none;
         position: absolute;
         width: 100%;
         top: 45px;
