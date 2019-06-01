@@ -32,31 +32,35 @@ $(".nav-logo").click(function () {
     }
 });
 
+// TODO: display form errors in html
 /*   
 FAKE FORM ERRORS HANDLING
 */
 
-$("input[name=name]").on("input", function(e){
-    e.preventDefault();
-    var name = $("input[name=name]").val();
 
-    if (RegExp(/^[a-zA-Z]{3,25}(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/).test(name)) {
+
+$(".form-submit").click(function(e){
+    // block HTML validation
+    e.preventDefault();
+
+    var name = $("input[name=name]").val();
+    var email = $("input[name=email]").val();
+    var phone = $("input[name=phone]").val();
+    var message = $("textarea[name=message]").val();
+
+    if (RegExp(/^[a-zA-Z]{3,}(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/).test(name)) {
         $(".name-error").remove();
     } else {
         if ($(".name-error").text() === "") {
             var nameErr = $("<div class='form-error name-error'></div>");
             nameErr.text("Name should contain only letters and longer than 3 characters.");
-    
+            
             $("input[name=name]").after(nameErr);
         }
     }
-});
-
-$("input[name=email]").on("input", function (e) {
-    e.preventDefault();
-    var email = $("input[name=email]").val();
 
     if (RegExp(/^[a-zA-Z]{3,}\@[a-z0-9]{3,}\.[a-z]{2,5}$/).test(email)) {
+        console.log("YES")
         $(".email-error").remove();
     } else {
         if ($(".email-error").text() === "") {
@@ -66,13 +70,9 @@ $("input[name=email]").on("input", function (e) {
             $("input[name=email]").after(emailErr);
         }
     }
-});
 
-$("input[name=phone]").on("input", function (e) {
-    e.preventDefault();
-    var phone = $("input[name=phone]").val();
-
-    if (RegExp(/^[0-9]{6,12}$/).test(phone)) {
+    if (RegExp(/^[0-9]{9,12}$/).test(phone)) {
+        console.log("YES")
         $(".phone-error").remove();
     } else {
         if ($(".phone-error").text() === "") {
@@ -82,42 +82,28 @@ $("input[name=phone]").on("input", function (e) {
             $("input[name=phone]").after(phoneErr);
         }
     }
+
+
 });
 
-$("textarea[name=message]").on("input", function (e) {
-    e.preventDefault();
-    var message = $("textarea[name=message]").val();
-
-    if (RegExp(/^.{3,}$/).test(message)) {
-        $(".message-error").remove();
-    } else {
-        if ($(".message-error").text() === "") {
-            var messageErr = $("<div class='form-error message-error'></div>");
-            messageErr.text("Insert a message, please.");
-
-            $("textarea[name=message]").after(messageErr);
-        }
-    }
-});
-
-$(".form-submit").click(function(e){
-    e.preventDefault();
-    if (
-        ($("input[name=name]").val() !== "" && 
-        $(".name-error").text() === "") &&
-        ($("input[name=email]").val() !== "" &&
-        $(".email-error").text() === "") && 
-        ($("input[name=phone]").val() !== "" &&
-        $(".phone-error").text() === "") && 
-        ($("textarea[name=message]").val() !== "" &&
-        $(".message-error").text() === ""))
-        {
-            var sendErr = $("<div class='form-error send-error'></div>");
-            sendErr.text(`Sorry ${$("input[name=name]").val()}, the server is not working. Try again later.`);
-
-            $(".form-submit").before(sendErr);
-        }
-});
 
 
 // TODO: create yellow overlay for portfolio items with link on a new page
+
+
+
+{/* <form class="contact-form">
+<div class="form-flex">
+    <div class="form-left">
+        <input class="form-typography" type="text" name="name" id="name" required placeholder="Your Name *" oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')">
+        <input class="form-typography" type="email" name="email" id="email" required placeholder="Your Email *">
+        <input class="form-typography" type="tel" name="phone" id="phone" required placeholder="Your Phone *" oninvalid="this.setCustomValidity('Please enter your phone number')" oninput="this.setCustomValidity('')">
+    </div>
+    <div class="form-right">
+        <textarea class="form-typography" name="message" id="message" cols="30" rows="10" required placeholder="Your Message *" oninvalid="this.setCustomValidity('Please enter your message')" oninput="this.setCustomValidity('')"></textarea>
+    </div>
+    <!-- TODO: Handle errors in sending message -->
+    <!-- TODO: Remove standard behavior of refreshing -->
+</div>
+<button class="form-submit button-big" type="submit">Send Message</button>
+</form> */}

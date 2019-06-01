@@ -32,6 +32,7 @@ $(".nav-logo").click(function () {
     }
 });
 
+// TODO: display form errors in html
 /*   
 FAKE FORM ERRORS HANDLING
 */
@@ -115,9 +116,11 @@ $(".form-submit").click(function(e){
             var sendErr = $("<div class='form-error send-error'></div>");
             sendErr.text(`Sorry ${$("input[name=name]").val()}, the server is not working. Try again later.`);
 
-            $(".form-submit").before(sendErr);
+            $("textarea[name=message]").after(sendErr);
         }
 });
+    
+
 
 
 // TODO: create yellow overlay for portfolio items with link on a new page

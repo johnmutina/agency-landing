@@ -32,6 +32,7 @@ $(".nav-logo").click(function () {
     }
 });
 
+// TODO: display form errors in html
 /*   
 FAKE FORM ERRORS HANDLING
 */
@@ -101,23 +102,17 @@ $("textarea[name=message]").on("input", function (e) {
 });
 
 $(".form-submit").click(function(e){
-    e.preventDefault();
     if (
-        ($("input[name=name]").val() !== "" && 
-        $(".name-error").text() === "") &&
-        ($("input[name=email]").val() !== "" &&
-        $(".email-error").text() === "") && 
-        ($("input[name=phone]").val() !== "" &&
-        $(".phone-error").text() === "") && 
-        ($("textarea[name=message]").val() !== "" &&
-        $(".message-error").text() === ""))
-        {
-            var sendErr = $("<div class='form-error send-error'></div>");
-            sendErr.text(`Sorry ${$("input[name=name]").val()}, the server is not working. Try again later.`);
+        ($("input[name=name]").text() !== "" && $(".name-error").text() === "") &&
+        ($("input[name=email]").text() !== "" && $(".email-error").text() === "") && 
+        ($("input[name=phone]").text() !== "" && $(".phone-error").text() === "") && 
+        ($("input[name=name]").text() !== "" && $(".message-error").text() === "") &&
+        console.log("YES!")
+    }
 
-            $(".form-submit").before(sendErr);
-        }
 });
+    
+
 
 
 // TODO: create yellow overlay for portfolio items with link on a new page
