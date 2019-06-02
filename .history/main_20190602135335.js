@@ -56,7 +56,7 @@ $("input[name=email]").on("input", function (e) {
     e.preventDefault();
     var email = $("input[name=email]").val();
 
-    if (RegExp(/^.{3,}\@[a-z0-9]{2,}\.[a-z]{2,5}$/).test(email)) {
+    if (RegExp(/^[a-zA-Z]{3,}\@[a-z0-9]{3,}\.[a-z]{2,5}$/).test(email)) {
         $(".email-error").remove();
     } else {
         if ($(".email-error").text() === "") {
@@ -103,7 +103,7 @@ $("textarea[name=message]").on("input", function (e) {
 $(".form-submit").click(function(e){
     e.preventDefault();
     if ($(".send-error").text() !== "") {
-        $(".send-error").remove();
+        $(".send-error").text("");
     }
     var sendErr;
     if (

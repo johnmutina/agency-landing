@@ -472,6 +472,7 @@ CONTACTS
     border: none;
 }
 
+/* TODO: Style form errors (see JS file) */
 .form-error {
     width: auto;
     padding: 0 40px;
@@ -488,6 +489,7 @@ CONTACTS
     margin-top: 40px;
     margin-bottom: 30px;
 }
+
 
 /* 
 FOOTER 

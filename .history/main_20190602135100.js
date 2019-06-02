@@ -56,7 +56,7 @@ $("input[name=email]").on("input", function (e) {
     e.preventDefault();
     var email = $("input[name=email]").val();
 
-    if (RegExp(/^.{3,}\@[a-z0-9]{2,}\.[a-z]{2,5}$/).test(email)) {
+    if (RegExp(/^[a-zA-Z]{3,}\@[a-z0-9]{3,}\.[a-z]{2,5}$/).test(email)) {
         $(".email-error").remove();
     } else {
         if ($(".email-error").text() === "") {
@@ -102,28 +102,27 @@ $("textarea[name=message]").on("input", function (e) {
 
 $(".form-submit").click(function(e){
     e.preventDefault();
-    if ($(".send-error").text() !== "") {
-        $(".send-error").remove();
-    }
-    var sendErr;
-    if (
-        ($("input[name=name]").val() !== "" && 
-        $(".name-error").text() === "") &&
-        ($("input[name=email]").val() !== "" &&
-        $(".email-error").text() === "") && 
-        ($("input[name=phone]").val() !== "" &&
-        $(".phone-error").text() === "") && 
-        ($("textarea[name=message]").val() !== "" &&
-        $(".message-error").text() === "")) {
+    if($(".send-error").text() === ""){
+        var sendErr;
+        if (
+            ($("input[name=name]").val() !== "" && 
+            $(".name-error").text() === "") &&
+            ($("input[name=email]").val() !== "" &&
+            $(".email-error").text() === "") && 
+            ($("input[name=phone]").val() !== "" &&
+            $(".phone-error").text() === "") && 
+            ($("textarea[name=message]").val() !== "" &&
+            $(".message-error").text() === "")) {
+                sendErr = $("<div class='form-error send-error'></div>");
+                sendErr.text(`Sorry ${$("input[name=name]").val()}, the server is not working. Try again later.`);
+    
+                $(".form-submit").before(sendErr);
+        } else {
             sendErr = $("<div class='form-error send-error'></div>");
-            sendErr.text(`Sorry ${$("input[name=name]").val()}, the server is not working. Try again later.`);
-
+            sendErr.text(`The form is not filled correctly. Fill in the form and try again.`);
+    
             $(".form-submit").before(sendErr);
-    } else {
-        sendErr = $("<div class='form-error send-error'></div>");
-        sendErr.text(`The form is not filled correctly. Fill in the form and try again.`);
-
-        $(".form-submit").before(sendErr);
+        }
     }
 });
 

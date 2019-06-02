@@ -56,7 +56,7 @@ $("input[name=email]").on("input", function (e) {
     e.preventDefault();
     var email = $("input[name=email]").val();
 
-    if (RegExp(/^.{3,}\@[a-z0-9]{2,}\.[a-z]{2,5}$/).test(email)) {
+    if (RegExp(/^.{3,}\@[a-z0-9]{3,}\.[a-z]{2,5}$/).test(email)) {
         $(".email-error").remove();
     } else {
         if ($(".email-error").text() === "") {
