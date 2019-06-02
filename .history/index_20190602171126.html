@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Agency Landing</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+    
+    <header>
+        <nav class="main-menu">
+            <div class="nav-logo">
+                <a href="#">Start Bootstrap</a>
+            </div>
+            <ul class="navbar">
+                <li class="nav-link"><a href="#services">Services</a></li>
+                <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#team">Team</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- MOBILE MENU (hidden by defaul) -->
+            <div class="burger-div">
+                <button class="burger-button button-big">Menu<i class="fas fa-bars"></i></button>
+                <ul class="burger-menu hidden">
+                    <li class="nav-link"><a href="#services">Services</a></li>
+                    <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#team">Team</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h3>Welcome To Our Studio!</h3>
+                <h1>It's Nice To Meet You</h1>
+                <a href="#"><button class="button-big">Tell Me More</button></a>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <section class="services main-section" id="services">
+            <div class="sect-intro">
+                <h2>Services</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <div class="services-row">
+                <div class="service-box">
+                    <i class="fas fa-cart-arrow-down"></i>
+                    <h4 class="box-title">E-Commerce</h4>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea tempore quod explicabo? Tempore eveniet omnis libero id officia, dolores itaque sint vel quisquam nam dolore?</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-laptop"></i>
+                    <h4 class="box-title">Responsive Design</h4>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea tempore quod explicabo? Tempore eveniet omnis libero id officia, dolores itaque sint vel quisquam nam dolore?</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-lock"></i>
+                    <h4 class="box-title">Web Security</h4>
+                    <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea tempore quod explicabo? Tempore eveniet omnis libero id officia, dolores itaque sint vel quisquam nam dolore?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio main-section" id="portfolio">
+            <div class="sect-intro">
+                <h2>Portfolio</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+
+            <div class="portfolio-wall">
+                <div class="portfolio-box">
+                    <a href="#threads" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png" alt="A clothes rack">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Threads</h4>
+                    <h3 class="portfolio-category">Illustration</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic" src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png" alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem
+                    culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores
+                    repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+                
+                <div class="portfolio-box">
+                    <a href="#explore" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="https://www.escoffieronline.com/wp-content/uploads/2014/03/exploring-panamanian-cuisine_1107_565193_1_14094244_500.jpg" alt="A beautiful sea with a boat">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Explore</h4>
+                    <h3 class="portfolio-category">Graphic Design</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic"
+                        src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png"
+                        alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Est blanditiis dolorem
+                        culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                        cupiditate, maiores
+                        repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+
+                <div class="portfolio-box">
+                    <a href="#finish" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="https://www.theshoemarket.com/Images/theshoemarket/brands/tile/display.jpg" alt="A clothes shop">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Finish</h4>
+                    <h3 class="portfolio-category">Identity</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic"
+                        src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png"
+                        alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Est blanditiis dolorem
+                        culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                        cupiditate, maiores
+                        repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+
+                <div class="portfolio-box">
+                    <a href="#lines" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="https://static1.squarespace.com/static/51fa8a34e4b0d46ee2905d8d/t/59a0b2638419c2bb44048871/1503703937744/IMG_9076.jpg" alt="Jewels display">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Lines</h4>
+                    <h3 class="portfolio-category">Branding</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic"
+                        src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png"
+                        alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Est blanditiis dolorem
+                        culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                        cupiditate, maiores
+                        repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+
+                <div class="portfolio-box">
+                    <a href="#southwest" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="https://heureka-conference.com/wp-content/uploads/2013/09/Berlin-startup-hipster-hype.jpg" alt="A guy listening to music and reading a paper">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Southwest</h4>
+                    <h3 class="portfolio-category">Website Design</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic"
+                        src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png"
+                        alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Est blanditiis dolorem
+                        culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                        cupiditate, maiores
+                        repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+
+                <div class="portfolio-box">
+                    <a href="#chicago" rel="modal:open">
+                        <div class="portfolio-hover">
+                            <i class="fas fa-plus portfolio-plus transparent"></i>
+                            <img src="http://s3.amazonaws.com/architecture-org/files/events/sqr_lrg_millenium-park-cloud-gate-03.jpg" alt="A clothes rack">
+                        </div>
+                    </a>
+                    <h4 class="portfolio-title">Chicago</h4>
+                    <h3 class="portfolio-category">Photography</p>
+                </div>
+                <!-- Modal portfolio page which opens on click -->
+                <div id="threads" class="modal portfolio-modal">
+                    <h1 class="modal-title">PROJECT NAME</h1>
+                    <h3 class="modal-sub">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <img class="modal-pic"
+                        src="https://azcdn.galileo.pgsitecore.com/en-us/-/media/Tide/Images/Articles/version2/Detail/How_to_Choose_the_Best_Color_Clothes_for_You_yellow.png"
+                        alt="A clothes rack">
+                    <p class="modal-description">Use this area to describe your project. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Est blanditiis dolorem
+                        culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae
+                        cupiditate, maiores
+                        repudiandae, nostrum, reiciendis facere nemo!</p>
+                    <p><strong>Date:</strong> January 2020</p>
+                    <p><strong>Client:</strong> Threads</p>
+                    <p><strong>Category:</strong> Illustration</p>
+                    <a href="#" rel="modal:close"><button class="modal-button button-big">Close Project</button></a>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="about main-section" id="about">
+            <div class="sect-intro">
+                <h2>About</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+
+            <!-- I create a div to assign a border and reproduce a sort of timeline -->
+            <div class="timeline"></div>
+
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="https://www.learner.org/courses/essential/earthspace/images/show5-mountain.jpg" alt="Mountains">
+                </div>
+                <div class="about-content">
+                    <h4 class="about-title">2009-2011</h4>
+                    <h4 class="about-title">Our Humble Beginnings</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="https://cdn.24.co.za/files/Cms/General/d/8488/29ba2037b9eb4334a387b9e20e46f398.jpg" alt="Plane">
+                </div>
+                <div class="about-content reversed">
+                    <h4 class="about-title">March 2011</h4>
+                    <h4 class="about-title">An Agency is Born</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="https://static1.squarespace.com/static/59ba92c4e3df28b3777c5774/t/5bd2345a53450aa3866ae387/1540502671649/EP40+INSTA.jpg" alt="Typewriter and flowers">
+                </div>
+                <div class="about-content">
+                    <h4 class="about-title">December 2012</h4>
+                    <h4 class="about-title">Transition to Full Service</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+            </div>
+            <div class="about-row">
+                <div class="about-image">
+                    <img src="https://www.earthandsky.co.nz/images/300x300/mj-tour-300x300.jpg" alt="Mountains">
+                </div>
+                <div class="about-content reversed">
+                    <h4 class="about-title">July 2014</h4>
+                    <h4 class="about-title">Phase Two Expansion</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                </div>
+            </div>
+            <div class="about-row">
+                <span class="about-image yellow-background">
+                    <h4>Be Part of Our Story!</h4>
+                </span>
+            </div>
+        </section>
+
+        <section class="team main-section" id="team">
+            <div class="sect-intro">
+                <h2>Our Amazing Team</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+
+            <div class="team-row">
+                <div class="team-box">
+                    <img src="https://static1.squarespace.com/static/5abbcf3a70e80264efadd0a5/t/5c27d78340ec9ab2ea1de438/1546114990997/ANPHeadshot2017_4573.jpg" alt="Kay Garland">
+                    <h4 class="team-name">Kay Garland</h4>
+                    <p class="team-role">Lead Designer</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-box">
+                    <img src="https://pbs.twimg.com/profile_images/1005234357324267520/N2UIVzNq_400x400.jpg"
+                        alt="Larry Parker">
+                    <h4 class="team-name">Larry Parker</h4>
+                    <p class="team-role">Lead Marketer</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="team-box">
+                    <img src="https://static1.squarespace.com/static/5abbcf3a70e80264efadd0a5/t/5b75bcef6d2a73c584136376/1534442760829/corinne+chin_square_300.jpg" alt="Diana Petersen">
+                    <h4 class="team-name">Diana Petersen</h4>
+                    <p class="team-role">Lead Developer</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="team-paragraph">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis a animi debitis aperiam iure, molestias asperiores laboriosam incidunt possimus, rem repudiandae neque natus delectus sed ipsam qui fugit accusamus in.</p>
+            </div>
+
+
+        </section>
+
+        <section class="clients">
+            <div class="clients-logos">
+                <!-- TODO: store pictures below in local -->
+                <a href="#"><img class="client-logo"
+                        src="data:image/png;base64,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"
+                        alt="you go words logo"></a>
+                <a href="#"><img class="client-logo"
+                        src="data:image/png;base64,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"
+                        alt="devops conference logo"></a>
+                <a href="#"><img class="client-logo"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAyCAMAAAAuj2TTAAAAY1BMVEX///8AAAAZtf2IiIiZmZnd3d27u7tmZmYRERHu7u7MzMx3d3czMzNVVVWqqqoiIiJEREQouv3C6/7w+v+U3P6j4f510/7g9f/R8P84v/1Wyf5HxP1mzv6y5v6E2P7p+P/F7P4lMMe3AAAFB0lEQVRoge1a2XriOgwmMdlDgOwJS+f9n/JY8iYnNgOF9pT5qpsJli35t1a7s9n80i/90i/908T2RfSV8qOk3DoZ8e5QvVDPNgiCw6dW1nU93DFtzxW4Npzx8eDmEUaM0SOoGMtvzE5A3h374dS0rf4e+mPIaer0yJaxxXzUHIH8JQcoBobbVpLsI4D5aeaf/QCQPgwVkg5hAJ2kVcCyiTU9Qs2fB5LZK0FBcMMkjwGZJI7Q0LHBocPqwAqQHH8eSOQAEr8EyMi3ja40gD1aborLzD9mZLLVvsAzgics8iAQOLf0PiCbWZqEmyYc9ZD4RLW75Ub5wHcBifZuPS6q+a5r/u9RBUt3CjWmEg1gJqOpKzTV3hWjrwbyEJ3QkQAPhHg3YeK6CB5bHH36F1M/ByRnID8omSeBx4J/gPXZIm839dihSQAIz8WYuOZasTHJlHp2BT+L1eZYqeTbQByKbwDJIbVI2ikoRXBQ+41LzU4rCNbU4EUvAhP0CETAOHMYo4yWzc7KjzulN0516EQ7Iz+mQJyK/UBYYFGlB0sFidKOnlhzNvl2qOVHD/51CcMLsYFSjPbZw1eqxVSW/MTIdyv2AlngkFJM+k2WfAJkJoWjh2APj1dRCSdTJVO1d6WWWQ6y9cn3KI4cwzHBkTJ9ABUF4uBrIC2UcH7wY48VEH7K3fcykemDlV6MThxRIJVPvk+xB4gcFqaKxCFAWlRAcouvnFkAabgJzmKDEO4t/A77etNcTrogKhGiTUFthw0BkqUe+V7FHiC44b2OxVitVkAONn9LgXS6EUETHJuaeJrmiFouMq7JxRHV45LvVewGgqMkCQlLpxrIil8QIDzSr2p8wD5l1E3jbHCI7WMOMdVRAsl88v2K3UCW5UpXXglkxReuIIDMssdCCrFPaVqshqeOitRtSq4+NBCvfL9id9ba6SNSFIt5EsiaX/iByNaxrsEaxCLCTTK5tqJAvPL9it1AwNblxiJgJArImr+1XKtXww0awkyru2GxhtFgUdvxyvcrdgMB0Ysb7R7NL4Gs+aTytiSkW4wM3ZjwTt58C7c4iKWFBcQr36/4CywC6fYkkECUH00N5BaZWrIIpYnknltAXmaRp2IEzTB1zWbEj+Z8HvW0y/FKFok2hZb4V8fIU1lLFHBFI5XCa0xPf4qyR2S9OmuJpEzaclFHMgUkX/JpHeF01fXvYuHgEKlrmf5PVQZaR1zy/Yo9TeOislbq2DyVXTZA5uIz4vvPsV88ZY2n0EImGw4Tv57KbuR7FXuAyDpZoDvmoqVJ172W4Mfq4mLd4IZ6sKoGUKvfgySVi4WLXmst36vY18avuvhF91us+Y6raG85Es9Z4dXGJtXo8F11vyv5PsVfch/RdLY2fpnC6Y89QQSDeU558j5yxw0xrcz2xdQbN0RNPCb6D/n9ceVhc106G64zL51kO1VK5ZOHMI/i1NoAlgtp6NzcmYNEjtEHOnJ1LmM82vUTJXemqa8/mqbu8Qa/xIEnR19PUnOuWULkY5RXtxST276Ea+wTMYymHdM+bL805uKVg4GCyvEKwmmAa+80n0JZJFdUBCl9frK2kzE8SwYT8pIw7lD8F3rgyVSS7OA5jOs9f1b4LnocCOTh9jyf258E43NAfiT9M0DIHeiNqZJPsf/3Pp4llb3v/bPCTyXVqTr/fPFOFMte5dYffd+DsMonX/rfBb6L3t2p3oH+A2YNN76mKoygAAAAAElFTkSuQmCC"
+                        alt="hoja de vida logo"></a>
+                <a href="#"><img class="client-logo"
+                        src="data:image/png;base64,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"
+                        alt="codementor x logo"></a>
+            </div>
+        </section>    
+    </main>
+        
+    <section class="contact-us main-section" id="contact">
+        <div class="sect-intro">
+            <h2>Contact Us</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+
+        <form class="contact-form">
+            <div class="form-flex">
+                <div class="form-left">
+                    <input class="form-typography" type="text" name="name" id="name" required placeholder="Your Name *">
+                    <input class="form-typography" type="email" name="email" id="email" required placeholder="Your Email *">
+                    <input class="form-typography" type="tel" name="phone" id="phone" required placeholder="Your Phone *">
+                </div>
+                <div class="form-right">
+                    <textarea class="form-typography" name="message" id="message" cols="30" rows="10" required placeholder="Your Message *"></textarea>
+                </div>
+            </div>
+            <button class="form-submit button-big" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-copyright">
+            <p>Copyright © JohnMutina 2019</p>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</html>
